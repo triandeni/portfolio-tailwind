@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist//css/final.css" rel="stylesheet" />
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
@@ -16,17 +20,32 @@
     <title>Portfolio || Trian Deni</title>
   </head>
   <body>
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+    >
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary"> Trian deni </a>
+            <a href="#home" class="block py-6 text-lg font-bold text-primary">
+              Trian deni
+            </a>
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-              <span class="hamburger-line origin-top-left transition duration-500 ease-in-out"></span>
-              <span class="hamburger-line transition duration-500 ease-in-out"></span>
-              <span class="hamburger-line origin-bottom-left transition duration-500 ease-in-out"></span>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-500 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-500 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-500 ease-in-out"
+              ></span>
             </button>
 
             <nav
@@ -35,27 +54,51 @@
             >
               <ul class="block lg:flex">
                 <li class="group text-center">
-                  <a href="#Home" class="mx-8 flex border-b-2 border-dark py-2 text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none">Beranda</a>
+                  <a
+                    href="#Home"
+                    class="mx-8 flex border-b-2 border-dark py-2 text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none"
+                    >Beranda</a
+                  >
                 </li>
                 <li class="group text-center">
-                  <a href="#About" class="mx-8 flex border-b-2 border-dark py-2 text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none">Tentang saya</a>
+                  <a
+                    href="#About"
+                    class="mx-8 flex border-b-2 border-dark py-2 text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none"
+                    >Tentang saya</a
+                  >
                 </li>
                 <li class="group text-center">
-                  <a href="#portfolio" class="mx-8 flex border-b-2 border-dark py-2 text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none">Portfolio</a>
+                  <a
+                    href="#portfolio"
+                    class="mx-8 flex border-b-2 border-dark py-2 text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none"
+                    >Portfolio</a
+                  >
                 </li>
                 <li class="group text-center">
-                  <a href="#kontak" class="mx-8 flex border-b-2 border-dark py-2 text-center text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none">Kontak</a>
+                  <a
+                    href="#kontak"
+                    class="mx-8 flex border-b-2 border-dark py-2 text-center text-base text-dark group-hover:text-primary dark:border-white dark:text-white lg:border-none"
+                    >Kontak</a
+                  >
                 </li>
                 <li class="mt-3 flex items-center pl-8 lg:mt-0">
                   <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500 dark:text-white">Light</span>
+                    <span class="mr-2 text-sm text-slate-500 dark:text-white"
+                      >Light</span
+                    >
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"></div>
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"
+                        ></div>
                       </div>
                     </label>
-                    <span class="ml-2 text-sm text-slate-500 dark:text-white">Dark</span>
+                    <span class="ml-2 text-sm text-slate-500 dark:text-white"
+                      >Dark</span
+                    >
                   </div>
                 </li>
               </ul>
@@ -69,14 +112,32 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Halo semua, perkenalkan Saya <span class="mt-2 ml-3 block text-4xl font-bold text-dark dark:text-white">Trian Deni</span></h1>
-            <h2 class="font-mediun text-md lg:text-1xl mb-6 ml-6 text-dark dark:text-white lg:mb-32">Front End Developer</h2>
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Halo semua, perkenalkan Saya
+              <span
+                class="mt-2 ml-3 block text-4xl font-bold text-dark dark:text-white"
+                >Trian Deni</span
+              >
+            </h1>
+            <h2
+              class="font-mediun text-md lg:text-1xl mb-6 ml-6 text-dark dark:text-white lg:mb-32"
+            >
+              Front End Developer
+            </h2>
 
-            <a class="ml-4 cursor-pointer rounded-full bg-primary py-3 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg" href="#kontak">Hubungi Saya</a>
+            <a
+              class="ml-4 cursor-pointer rounded-full bg-primary py-3 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              href="#kontak"
+              >Hubungi Saya</a
+            >
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="mt-10 lg:right-0 lg:mt-9 lg:mb-14">
-              <img src="src/img/1.png" alt="Trian Deni" class="top-10 mx-auto max-w-full" />
+              <img
+                src="src/img/1.png"
+                alt="Trian Deni"
+                class="top-10 mx-auto max-w-full"
+              />
             </div>
           </div>
         </div>
@@ -89,15 +150,27 @@
       <div class="container">
         <div class="flex w-full justify-center">
           <div class="mb-10 w-full px-6">
-            <h4 class="mb-3 text-center text-lg font-bold uppercase text-primary lg:text-3xl">Tentang Saya</h4>
-            <p class="text-center text-base font-medium text-dark dark:text-white lg:text-lg">
-              Halo, perkenalkan nama saya Trian Deni berasal dari wonogiri, saya adalah seorang <span class="font-bold">front end developer</span> yang baru lulus kuliah dan saya belum memiliki pengalaman kerja. saya memiliki kemampuan
-              seperti dibawah ini :
+            <h4
+              class="mb-3 text-center text-lg font-bold uppercase text-primary lg:text-3xl"
+            >
+              Tentang Saya
+            </h4>
+            <p
+              class="text-center text-base font-medium text-dark dark:text-white lg:text-lg"
+            >
+              Halo, perkenalkan nama saya Trian Deni berasal dari wonogiri, saya
+              adalah seorang <span class="font-bold">front end developer</span> yang
+              baru lulus kuliah dan saya belum memiliki pengalaman kerja. saya
+              memiliki kemampuan seperti dibawah ini :
             </p>
           </div>
         </div>
         <div class="mt-14 w-full px-4">
-          <h1 class="lg-text-2xl mb-2 text-center text-3xl font-bold text-primary sm:text-4xl">Skill</h1>
+          <h1
+            class="lg-text-2xl mb-2 text-center text-3xl font-bold text-primary sm:text-4xl"
+          >
+            Skill
+          </h1>
         </div>
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
@@ -136,15 +209,37 @@
         <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
           <div class="mb-12 p-4 md:h-56 md:w-1/2">
             <div>
-              <div class="overflow-hidden rounded-md shadow-md dark:shadow-slate-600">
-                <img src="./src/img/Portfolio/Kalkulator.png" alt="Kalkulator" width="w-full" height="" />
-                <h3 class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200">Kalkulator</h3>
-                <p class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300">Kalkulator adalah aplikasi yang dibuat menggunakan javascript, dan styling menggunakan css.</p>
+              <div
+                class="overflow-hidden rounded-md shadow-md dark:shadow-slate-600"
+              >
+                <img
+                  src="./src/img/Portfolio/Kalkulator.png"
+                  alt="Kalkulator"
+                  width="w-full"
+                  height=""
+                />
+                <h3
+                  class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200"
+                >
+                  Kalkulator
+                </h3>
+                <p
+                  class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300"
+                >
+                  Kalkulator adalah aplikasi yang dibuat menggunakan javascript, dan
+                  styling menggunakan css.
+                </p>
                 <div class="mb-3">
-                  <a href="https://github.com/triandeni/KalkulatorKU" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                  <a
+                    href="https://github.com/triandeni/KalkulatorKU"
+                    target="_blank"
+                    class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                     >Codes</a
                   >
-                  <a href="https://triandeni.github.io/KalkulatorKU/" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                  <a
+                    href="https://triandeni.github.io/KalkulatorKU/"
+                    target="_blank"
+                    class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                     >Show</a
                   >
                 </div>
@@ -154,36 +249,77 @@
 
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md dark:shadow-slate-600">
-              <img src="./src/img/Portfolio/notes-app.png" alt="notes-app" width="w-full" height="lg:h-4" />
-              <h3 class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200">Notes App</h3>
-              <div class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300">
-                <p>notes-app adalah sebuah aplikasi catatan yang dibuat menggunkan react js, dan styling menggunakan css.</p>
+              <img
+                src="./src/img/Portfolio/notes-app.png"
+                alt="notes-app"
+                width="w-full"
+                height="lg:h-4"
+              />
+              <h3
+                class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200"
+              >
+                Notes App
+              </h3>
+              <div
+                class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300"
+              >
+                <p>
+                  notes-app adalah sebuah aplikasi catatan yang dibuat menggunkan
+                  react js, dan styling menggunakan css.
+                </p>
               </div>
 
               <div class="mb-3">
-                <a href="https://github.com/triandeni/notes-app" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://github.com/triandeni/notes-app"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Codes</a
                 >
-                <a href="https://triandeni.github.io/notes-app/" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://triandeni.github.io/notes-app/"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Show</a
                 >
               </div>
             </div>
           </div>
-         
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md dark:shadow-slate-600">
-              <img src="./src/img/Portfolio/mie-ayam.png" alt="notes-app" width="w-full" height="lg:h-4" />
-              <h3 class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200">Pemesanan</h3>
-              <div class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300">
-                <p>Pemesanan adalah sebuah website tentang pesan makanan, yang dibuat menggunakan react js, dan style menggunakan css, api menggunakan firebase.</p>
+              <img
+                src="./src/img/Portfolio/mie-ayam.png"
+                alt="notes-app"
+                width="w-full"
+                height="lg:h-4"
+              />
+              <h3
+                class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200"
+              >
+                Pemesanan
+              </h3>
+              <div
+                class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300"
+              >
+                <p>
+                  Pemesanan adalah sebuah website tentang pesan makanan, yang dibuat
+                  menggunakan react js, dan style menggunakan css, api menggunakan
+                  firebase.
+                </p>
               </div>
 
               <div class="mb-3">
-                <a href="https://github.com/triandeni/makanan" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://github.com/triandeni/makanan"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Codes</a
                 >
-                <a href="https://triandeni.github.io/makanan/" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://triandeni.github.io/makanan/"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Show</a
                 >
               </div>
@@ -191,17 +327,37 @@
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md dark:shadow-slate-600">
-              <img src="./src/img/Portfolio/quotes.png" alt="notes-app" width="w-full" height="lg:h-4" />
-              <h3 class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200">Quotes</h3>
-              <div class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300">
-                <p>Quotes adalah sebuah website tentang kata kata mutiara, website dibuat menggunakan react js, dan api menggunkan firebase.</p>
+              <img
+                src="./src/img/Portfolio/quotes.png"
+                alt="notes-app"
+                width="w-full"
+                height="lg:h-4"
+              />
+              <h3
+                class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200"
+              >
+                Quotes
+              </h3>
+              <div
+                class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300"
+              >
+                <p>
+                  Quotes adalah sebuah website tentang kata kata mutiara, website
+                  dibuat menggunakan react js, dan api menggunkan firebase.
+                </p>
               </div>
 
               <div class="mb-3">
-                <a href="https://github.com/triandeni/quotes" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://github.com/triandeni/quotes"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Codes</a
                 >
-                <a href="https://quotes-a3906.web.app/quotes" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://quotes-a3906.web.app/quotes"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Show</a
                 >
               </div>
@@ -209,17 +365,38 @@
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md dark:shadow-slate-600">
-              <img src="./src/img/Portfolio/todolist.png" alt="notes-app" width="w-full" height="lg:h-4" />
-              <h3 class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200">To Do List</h3>
-              <div class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300">
-                <p>To Do List adalah aplikasi CRUD yang dibuat menggunakan React Js, dan styling mneggunakan react-bootstrap</p>
+              <img
+                src="./src/img/Portfolio/cuaca.png"
+                alt="notes-app"
+                width="w-full"
+                height="lg:h-4"
+              />
+              <h3
+                class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-slate-200"
+              >
+                To Do List
+              </h3>
+              <div
+                class="text-seconday mb-3 p-2 text-base font-medium dark:text-slate-300"
+              >
+                <p>
+                  Weather app adalah sebuah website untuk mengetahui kondisi cuaca
+                  suatu daerah. website ini dibuat menggunakan react js, dan tailwind
+                  css, dan menggunakan API weather map api dan sudah menggunakan WPA.
+                </p>
               </div>
 
               <div class="mb-3">
-                <a href="https://github.com/triandeni/ToDoList" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://cuacaa.netlify.app/"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Codes</a
                 >
-                <a href="https://triandeni.github.io/ToDoList/" target="_blank" class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                <a
+                  href="https://cuacaa.netlify.app/"
+                  target="_blank"
+                  class="ml-4 cursor-pointer rounded-full bg-primary py-2 px-6 text-base font-semibold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                   >Show</a
                 >
               </div>
@@ -241,9 +418,15 @@
               class="h-30 group relative mx-auto my-10 w-full rounded-lg border-t-2 border-slate-200 bg-white p-3 shadow-md transition-all duration-500 hover:scale-110 hover:bg-cyan-200 dark:bg-slate-800 dark:hover:bg-slate-900 lg:w-1/2 lg:text-2xl"
             >
               <a href="https://wa.link/lwiowf">
-                <img src="./src/img/phone-call.png" alt="nomer" class="float-left mt-3 flex w-14 p-4" />
+                <img
+                  src="./src/img/phone-call.png"
+                  alt="nomer"
+                  class="float-left mt-3 flex w-14 p-4"
+                />
                 <p class="px-6 pt-4 dark:text-white">No Telpon :</p>
-                <h1 class="px-6 pb-6 text-cyan-500 dark:text-cyan-200">085725985179</h1>
+                <h1 class="px-6 pb-6 text-cyan-500 dark:text-cyan-200">
+                  085725985179
+                </h1>
               </a>
             </div>
 
@@ -251,9 +434,15 @@
               class="h-30 group relative mx-auto w-full rounded-lg border-t-2 border-slate-200 bg-white p-3 shadow-md transition-all duration-500 hover:scale-110 hover:bg-cyan-200 dark:bg-slate-800 dark:hover:bg-slate-900 lg:w-1/2 lg:text-2xl"
             >
               <a href="mailto:triandeni6@gmail.com">
-                <img src="./src/img/email.png" alt="email" class="float-left mt-3 flex w-14 p-4" />
+                <img
+                  src="./src/img/email.png"
+                  alt="email"
+                  class="float-left mt-3 flex w-14 p-4"
+                />
                 <p class="px-6 pt-4 dark:text-white">Email :</p>
-                <h1 class="px-6 pb-6 text-cyan-500 dark:text-cyan-200">triandeni6@gmail.com</h1>
+                <h1 class="px-6 pb-6 text-cyan-500 dark:text-cyan-200">
+                  triandeni6@gmail.com
+                </h1>
               </a>
             </div>
           </div>
@@ -267,7 +456,11 @@
       </div>
     </footer>
 
-    <a href="#Home" class="fixed bottom-4 right-4 z-[999] hidden h-12 w-12 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="top">
+    <a
+      href="#Home"
+      class="fixed bottom-4 right-4 z-[999] hidden h-12 w-12 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+      id="top"
+    >
       <img src="./src/img/up-arrow.png" alt="up" />
     </a>
 
